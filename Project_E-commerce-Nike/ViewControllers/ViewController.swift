@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     private func animateLogo() {
         // Anima el logo reduciendo su escala y desvaneciéndolo
-        UIView.animate(withDuration: 2.0, animations: {
+        UIView.animate(withDuration: 3.0, animations: {
             self.nikeLogoImageView.transform = CGAffineTransform(scaleX: 1.5, y: 1.5) // Escala el logo
             self.nikeLogoImageView.alpha = 0.0 // Desvanece el logo
         }) { _ in
@@ -39,5 +39,14 @@ class ViewController: UIViewController {
         // Presentar el siguiente ViewController
         self.present(welcome1ViewController, animated: true, completion: nil)
     }
+    
+    @IBAction func btnStarted(_ sender: Any) {
+        performSegue(withIdentifier: "welcome2", sender: self)
+    }
+    
+    @IBAction func btnNext(_ sender: Any) {
+        performSegue(withIdentifier: "welcome3", sender: self)
+    }
+    
 }
 
