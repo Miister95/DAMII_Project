@@ -48,5 +48,8 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "welcome3", sender: self)
     }
     
+    @IBAction func btnNextLogin(_ sender: Any) {
+        performSegue(withIdentifier: "login", sender: self)
+    }
 }
 
