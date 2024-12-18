@@ -40,6 +40,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func btnSignIn(_ sender: Any) {
-        performSegue(withIdentifier: "register", sender: self)
+        performSegue(withIdentifier: "segueexplore", sender: self)
     }
+    
+    
 }

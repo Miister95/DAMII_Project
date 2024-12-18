@@ -51,5 +51,17 @@ class ExploreViewController: UIViewController {
                 searchBar.layer.shadowRadius = 4
     }
     
-
+    
+    @IBAction func btnProfile(_ sender: Any) {
+        performSegue(withIdentifier: "segueprofile", sender: self)
+    }
+    
+    @IBAction func btnEdit(_ sender: Any) {
+        performSegue(withIdentifier: "segueeditprofile", sender: self)
+    }
+    
+    @IBAction func btnPlus(_ sender: Any) {
+        performSegue(withIdentifier: "segueshop", sender: self)
+    }
+    
 }
